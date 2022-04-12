@@ -1,0 +1,128 @@
+/* ************************** */
+/* BASIC STUFF */
+/* ************************** */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 62.5%;
+  background-color: hsl(217, 54%, 11%);
+  font-family: "Outfit", sans-serif;
+}
+
+.container {
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 0.7rem;
+  overflow: hidden;
+  width: 250px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+
+  /* offset-x | offset-y | blur-radius | spread-radius | color */
+  box-shadow: 0 1rem 0 0.8rem hsla(215, 54%, 7%, 0.281),
+    0 1rem 0 2.5rem hsla(215, 54%, 7%, 0.089);
+
+  /*  */
+}
+
+.box-image {
+  margin-top: 1rem;
+  border-radius: 0.4rem;
+  width: 85%;
+}
+
+.components {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  gap: 0.9rem;
+}
+
+/* ************************** */
+/* MAIN BODY */
+/* ************************** */
+
+.header-text {
+  color: hsl(0, 0%, 100%);
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.desc-text {
+  color: hsl(215, 51%, 70%);
+  font-size: 0.8rem;
+}
+
+.eth-price {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.price {
+  margin-right: 3.9rem;
+  color: hsl(178, 100%, 50%);
+  font-size: 0.8rem;
+}
+
+.time-left {
+  color: hsl(215, 51%, 70%);
+  font-size: 0.69rem;
+}
+
+.gem-icon {
+  width: 0.6rem;
+}
+
+.clock-icon {
+  width: 0.8rem;
+}
+
+.div-line {
+  color: hsl(215, 32%, 27%);
+}
+
+.creator {
+  color: hsl(215, 51%, 70%);
+  font-size: 0.7rem;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  margin-bottom: 1.6rem;
+}
+
+.creator-icon {
+  width: 1.5rem;
+  border-radius: 50%;
+  border: 1px white solid;
+  margin-right: 0.6rem;
+}
+
+p .creator-name {
+  color: hsl(0, 0%, 100%);
+}
+
+/* ************************** */
+/* FRONT-END MENTOR STUFF */
+/* ************************** */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: aliceblue;
+}
+
+.attribution a {
+  color: wheat;
+}
